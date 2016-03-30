@@ -1,0 +1,18 @@
+An <b>asterisk</b>, <b>*</b>, matches any number of characters (including none).
+<br><br>
+A <b>question mark</b>, <b>?</b>, matches exactly one character.
+<br><br>
+<b>Braces</b> specify a collection of subpatterns.<br>
+For example: {sun,moon,stars} matches "sun", "moon", or "stars".<br>
+{temp*,tmp*} matches all strings beginning with "temp" or "tmp."
+<br><br>
+<b>Square brackets</b> convey a set of single characters or, when the hyphen character (-) is used, a range of characters.<br>
+For example: [aeiou] matches any lowercase vowel.<br>
+[0-9] matches any digit.<br>
+[A-Z] matches any uppercase letter.<br>
+[a-z,A-Z] matches any uppercase or lowercase letter.<br>
+Within the square brackets, *, ?, and \ match themselves.
+<br><br>
+All <b>other characters</b> match themselves.<br>
+To match *, ?, or the other special characters, you can escape them by using the backslash character, \.<br>
+For example: \\ matches a single backslash, and \? matches the question mark.
